@@ -1,0 +1,13 @@
+.navbar{
+    /* background-color: #292075; */
+    background-color: #002233;
+    padding: 1rem;
+}
+
+.navbar h1{
+    color: #fafafa;
+    @media screen and (max-width:480px){ 
+        text-align: center;
+        
+    }
+}

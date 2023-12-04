@@ -1,0 +1,127 @@
+.tilesContainer{
+    /* padding: 1rem 4rem; */
+    position: relative;
+}
+
+.tile-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #002233;
+    padding: 0 10rem 2rem 10rem;
+    top: 0;
+    height: 30vh;
+
+    @media screen and (max-width: 480px){
+        height: 30vh;
+        padding: 0;
+    }
+}
+
+.dashboard-icon{
+    display: flex;
+    align-items: center;
+    gap:0.8rem;
+    
+    @media screen and (max-width: 768px){
+        display:none;
+    }
+}
+
+.dashboard-icon p , .dashboard-icon svg{
+    color: #fafafa;
+    margin-top: 2rem;
+}
+
+.select-menu .select-btn{
+    display: flex;
+    align-items: center;
+    /* background: #fff; */
+    color: #fafafa;
+    margin-top: 2rem;
+    padding: 0 0.8rem;
+    font-size: 1rem;
+    font-weight: 400;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    transition: all 0.3s ease-in-out;
+    @media screen and (max-width: 480px){
+        width: 45%;
+        padding: 0;
+    }
+}
+
+.select-menu .select-btn:hover{
+    transform: scale(1.1);
+    color: #F2F2F2;
+}
+
+.select-menu .options{
+    position: absolute;
+    z-index: 999;
+    padding: 0.8rem;
+    margin-top: 5px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 0 3px rgba(0,0,0,0.1);
+    display: none;
+}
+
+.select-menu.active .options{
+    display: block;
+}
+
+.options .option{
+    display: flex;
+    justify-content: space-between;
+    height: 55px;
+    cursor: pointer;
+    padding: 0 0.6rem;
+    border-radius: 8px;
+    align-items: center;
+    background: #fff;
+    font-size: 1rem;
+    color: #333;
+}
+.options .option:hover{
+    background: #F2F2F2;
+}
+
+.card-container{
+    /* background-color: #fff; */
+    display: flex;
+    gap: 2rem;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    padding: 4rem 1rem;
+    position: absolute;
+    width: 80%;
+    left: 50%;
+    top: 100px;
+    transform: translateX(-50%);
+
+    /* @media screen and (max-width:768px){
+        g        
+    }*/
+    @media screen and (max-width:480px){
+        gap: 1rem;
+        /* overflow: scroll; */
+    } 
+
+}
+
+@media screen and (max-width: 768px){
+    .select-menu{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .select-menu .options{
+        top: 60px;
+    }
+}

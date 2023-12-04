@@ -1,0 +1,25 @@
+.tile-card {
+    background-color: #fff;
+    border-radius: 7px;
+    box-shadow: 0 2px 5px #ccc;
+    width: 240px;
+    margin: 0 auto;
+    float: left;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.card-title{
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
+    margin-left: 1rem;
+}
+
+.card-body{
+    font-weight: 600;
+    font-size: 3rem;
+    text-align: center;
+}
